@@ -32,6 +32,7 @@ function App() {
   return (
     <div className="container">
       <div className="header">
+        <img src="/logo.png" alt="Grupo Estrela" />
         <h1>Controle de Divergência de Peso</h1>
       </div>
 
