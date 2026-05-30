@@ -71,6 +71,7 @@ function NotaFiscalForm({ onNotaCriada }) {
             name="numero_nota"
             value={formData.numero_nota}
             onChange={handleChange}
+            placeholder="12345"
           />
         </div>
 
@@ -81,6 +82,7 @@ function NotaFiscalForm({ onNotaCriada }) {
             name="fornecedor"
             value={formData.fornecedor}
             onChange={handleChange}
+            placeholder="Moinho Rota S.A."
           />
         </div>
 
@@ -95,24 +97,26 @@ function NotaFiscalForm({ onNotaCriada }) {
         </div>
 
         <div className="form-group">
-          <label>Peso Informado (kg):</label>
+          <label>Peso NF:</label>
           <input
             type="number"
             name="peso_informado"
             value={formData.peso_informado}
             onChange={handleChange}
             step="0.01"
+            placeholder="kg"
           />
         </div>
 
         <div className="form-group">
-          <label>Peso Real (kg):</label>
+          <label>Peso Real (balança):</label>
           <input
             type="number"
             name="peso_real"
             value={formData.peso_real}
             onChange={handleChange}
             step="0.01"
+            placeholder="kg"
           />
         </div>
 

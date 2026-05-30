@@ -33,10 +33,7 @@ function RankingFornecedores() {
       ) : (
         <div>
           <p>Total de fornecedores: {ranking.length}</p>
-          
-          {ranking.length > 0 && (
-            <p>Maior divergência: {ranking[0].fornecedor} ({ranking[0].soma_divergencia.toFixed(2)} kg)</p>
-          )}
+          <p>Maior divergência: {ranking[0].fornecedor} ({ranking[0].soma_divergencia.toFixed(2)} kg)</p>
           
           <table>
             <thead>

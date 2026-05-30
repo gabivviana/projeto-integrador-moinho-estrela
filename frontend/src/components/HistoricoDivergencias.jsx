@@ -50,8 +50,8 @@ function HistoricoDivergencias() {
               <th>Data</th>
               <th>Nº Nota</th>
               <th>Fornecedor</th>
-              <th>Peso Informado</th>
-              <th>Peso Real</th>
+              <th>Peso NF</th>
+              <th>Peso Real (balança)</th>
               <th>Divergência</th>
               <th>Ações</th>
             </tr>
@@ -65,7 +65,7 @@ function HistoricoDivergencias() {
                 <td>{nota.peso_informado.toFixed(2)} kg</td>
                 <td>{nota.peso_real.toFixed(2)} kg</td>
                 <td className={nota.divergencia > 0 ? 'positive' : nota.divergencia < 0 ? 'negative' : ''}>
-                  {nota.divergencia > 0 ? '+' : ''}{nota.divergencia.toFixed(2)} kg
+                  {nota.divergencia.toFixed(2)} kg
                 </td>
                 <td>
                   <button 

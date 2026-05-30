@@ -85,6 +85,10 @@ body {
   border-radius: 4px;
 }
 
+.form-group input::placeholder {
+  color: #999;
+}
+
 button {
   padding: 10px 20px;
   background-color: #0d47a1;

@@ -16,9 +16,13 @@ function App() {
     try {
       const response = await axios.get('http://localhost:5000/api/notas')
       const notas = response.data
+      let totalDiv = 0
+      for (let n of notas) {
+        totalDiv += Math.abs(n.divergencia)
+      }
       setStats({
         totalNotas: notas.length,
-        totalDivergencia: notas.reduce((acc, nota) => acc + Math.abs(nota.divergencia), 0).toFixed(2)
+        totalDivergencia: totalDiv.toFixed(2)
       })
     } catch (error) {
       console.error('Erro ao buscar estatísticas:', error)
